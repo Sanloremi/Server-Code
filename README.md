@@ -9,3 +9,6 @@ final_1.csv in Server Code\Required_csvs and weather_data_8_code_1.csv in Server
 
 Step 3:
 Run the main.py
+
+NOTE:
+Change the name of the output.png file in D:\Server Code\Run_regression for every run as it will save the regression results
