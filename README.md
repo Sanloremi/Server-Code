@@ -11,4 +11,4 @@ Step 3:
 Run the main.py
 
 NOTE:
-Change the name of the output.png file in D:\Server Code\Run_regression for every run as it will save the regression results
+Change the name of the output.png file in Server Code\Run_regression for every run as it will save the regression results
