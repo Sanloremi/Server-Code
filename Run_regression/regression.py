@@ -1,7 +1,7 @@
 import pandas as pd
 import statsmodels.api as sm
 from Process_dataframe_for_regression import process_dataframe_add_remove_columns
-
+import matplotlib.pyplot as plt
 
 def regression_statsmodel() :
     chunk_full = pd.DataFrame()
@@ -28,6 +28,13 @@ def regression_statsmodel() :
         est = sm.OLS(y, X2)
         est2 = est.fit()
         print(est2.summary())
+        plt.rc('figure', figsize=(30, 20))
+        # plt.text(0.01, 0.05, str(model.summary()), {'fontsize': 12}) old approach
+        plt.text(0.01, 0.05, str(est2.summary()), {'fontsize' : 10},
+                 fontproperties='monospace')  # approach improved by OP -> monospace!
+        plt.axis('off')
+        plt.tight_layout()
+        plt.savefig('output.png')
     except() :
         print('Something went wrong')
     finally :
